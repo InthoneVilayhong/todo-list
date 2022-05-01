@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto;
+}
+
+.hello {
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // border: gold solid 2px;
+    flex-direction: column;
+}
+.searchbar {
+    background: #f2f7fd;
+    border: 1px solid #5c48d3;
+    box-sizing: border-box;
+    border-radius: 10px;
+    width: 548px;
+    height: 65px;
+    font-size: 1.5rem;
+    padding-left: 2rem;
+}
+.searchbar::placeholder {
+    color: lightgray;
+}
+.add-button {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 27px;
+    width: 130px;
+    height: 65px;
+    background: #5c48d3;
+    border-radius: 10px;
+    margin-left: 2rem;
+    color: white;
+}
+
+.todo {
+    border: solid red 2px;
+    margin: 2rem;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 2rem;
+    flex-direction: column;
+    line-height: 2rem;
+    font-size: 1.5rem;
+}
+
+.done {
+    text-decoration: line-through;
+}
+
+.text-task {
+    border: lightgreen 2px solid;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 1rem;
+    overflow-x: scroll;
+    margin-left: 0.5rem;
+
+    input {
+        margin-right: 1rem;
+    }
+}
+
+.trash {
+    font-size: 1rem;
+    margin-left: 1rem;
+}
+@media (max-width: 814px) {
+    .searchbar {
+        width: 60%;
+    }
+    .add-button {
+        width: 25%;
+    }
+    .todo {
+        margin: 0;
+    }
+    .text-task {
+        width: 60%;
+    }
+    .hello {
+        align-items: flex-start;
+    }
+}
